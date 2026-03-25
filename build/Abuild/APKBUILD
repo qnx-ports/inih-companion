@@ -3,7 +3,7 @@
 # Maintainer: Roberto Speranza <rsperanza@qnx.com>
 pkgname=inih
 pkgver=62
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Simple .INI file parser for embedded systems"
 url="https://github.com/benhoyt/inih"
 arch="all"
@@ -65,7 +65,6 @@ _dev() {
     mv "$subpkgdir"/usr/lib/pkgconfig/INIReader.pc "$pkgdir"/usr/lib/pkgconfig
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 206ddfaa55d29396c3a44f8d1dfcf578c5ebf892e81fe875cd6b4ec2af5cccf400ca13fc6585b6d8232bd122bd8aef7522bfc83898b5609b29c20bad9390ee02  inih-62.tar.gz
 "
